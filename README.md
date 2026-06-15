@@ -1,6 +1,4 @@
-# Document Editor (MERN)
-# Document Editor (MERN)
----
+
 # Document Editor (MERN)
 
 A lightweight document editor built with the MERN stack (MongoDB, Express, React + Vite, Node). This repo contains the backend API and a modern single-page React frontend.
