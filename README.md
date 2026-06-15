@@ -40,7 +40,7 @@ Create a `.env` in the `backend/` folder containing the following (example):
 ```
 MONGO_URI=mongodb://localhost:27017/documenteditor
 PORT=3000
-JWT_SECRET=replace_this_with_a_secure_value
+
 ```
 
 API endpoints (high level)
@@ -52,24 +52,7 @@ API endpoints (high level)
 - POST `/uploadDoc` — save document content (body: `{ userId, docId, content }`)
 - POST `/deleteDoc` — delete a document (body: `{ userId, docId }`)
 
-Notes & best practices
-- Do not commit secrets — `.env` is added to `.gitignore`.
-- `node_modules` should not be tracked; the repository was cleaned to untrack them in the tip.
-- Use `apiFetch` (see `frontend/src/Helper.js`) — it sets `Accept: application/json` and gives detailed errors.
 
-Contributing
-- Fork the repo, implement changes on feature branches, and open a PR to `main`. Include a clear description and, if applicable, screenshots.
 
-License
-- Add a license of your choice (e.g., MIT) to the repository.
 
-Contact
-- Open an issue or reach out to the maintainer listed on the repository.
-
----
-
-If you'd like, I can:
-- Add a `CONTRIBUTING.md` and `LICENSE` file
-- Add short `backend/README.md` and `frontend/README.md` with per-service instructions
-- Remove the root `.env` placeholder from the tip
 
